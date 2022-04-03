@@ -1,0 +1,20 @@
+-Para a informação 1 utilize uma lista não ordenada. Cada item dever ser um link e com uma 
+ imagem opcional. 
+-Para a foto do usuário, informação 2, utilize uma imagem de 64x64 pixels.
+-A informação 3 contém o nome completo do usuário, utilize um heading(Ex: h4).
+-A informação 4 o nome usuário acrescido com o arroba no início. deve ser utilizado outro 
+ heading(Ex: h5 ou h6).
+-A informação 5 trata-se de um botão para que o usuário possa editar o seu perfil. Logo, 
+ utilize um botão (tag button).
+-A informação 6 indica o localzação o usuário e a data de entrada na rede. Utilize links ou 
+ uma lista não ordenadas de links.
+-A informação 7 contém a quantidade de tweets,o número de seguidores e números de usuário que 
+ estão sendo seguidos. Utilize links ou uma lista não ordenada de links.
+-A informação 8 representa um tweet. Utilize um parágrafo e dentro do parágrafo você deve ter 
+ a imagem do usuário, o nome completo, o nome do usuário, a data do tweet e a texto do tweet. 
+ Além disso é necessário incluir o item 9.
+-O item 9 são uma série de links em forma de ícones, nessa atividade você pode utilizar links 
+ de texto.
+-Como não estamos utilizando CSS para mudar o estilo das tags ao final da tarefa a aparência 
+ da página não será das melhores. A imagem abaixo dá uma ideia de como deve ficar a página após 
+ concluída a atividade.
