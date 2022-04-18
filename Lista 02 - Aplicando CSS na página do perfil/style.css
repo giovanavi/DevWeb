@@ -1,0 +1,135 @@
+body{
+    padding: 0 0 0 0;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    height: 60%;
+}
+
+#menu{ /* div principal do menu*/
+    grid-row: 1;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.menu {/* ul do menu */
+    margin-left: -30px;
+    line-height: 45px;
+    width: 100%;
+    color: blue;
+}
+
+.menu li:hover{/* linhas da lista (ul) do menu*/
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
+.menu a{/*a hrefs presentes na pagina*/
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#personal-info{/* div foto até followers */
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 0px; 
+    margin-top: -20px;
+    width: 100%;
+    flex-direction: row;
+}
+
+#personal-info img{
+    padding-top: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+#bib{
+    color: rgb(15, 20, 25);
+    font-size: 20px;
+}
+
+h4{
+    color : rgb(83, 100, 113);
+}
+
+.origin{/* ul do personal-info */
+    color: rgb(83, 100, 113);
+}
+
+.origin li{
+    color: rgb(83, 100, 113);
+    display: inline-flex;
+}
+
+li > span{
+    color: black;
+    font-weight: bold;
+}
+
+#publi{
+    /*background-color: blueviolet;*/
+    grid-row: 3;
+}
+
+
+.publi li{
+
+    display:inline-flex;
+}
+
+.publi li:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
+.publi a{
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.action li{
+    display: inline-flex;
+}
+
+.action li:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
+.action a{
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+}
+
+#tzeet:hover{
+    background-color: rgba(249, 24, 128, 0.1);
+}
+
+#tweet_perfil{
+    color: rgb(15, 20, 25);    ;
+    margin-top: -13px;
+    margin-left: 45px;
+}
+
+#tweet_perfil > span{
+    font-weight: bold;
+    color: rgb(83, 100, 113);
+}
+
+#tweet{
+    color:  rgb(15, 20, 25);
+    margin-left: 45px;
+    margin-top: -10px;
+}
+
+
+.no_bullet{/*retira o ponto da lista(ul)*/
+    list-style-type: none;
+}
