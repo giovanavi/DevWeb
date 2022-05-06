@@ -1,0 +1,46 @@
+body{
+    padding: 0 0 0 0;
+}
+
+.nav{
+    margin-left: -100px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(15, 20, 25);  
+    font-weight: 500;
+}
+
+.logo img{
+    height: 35px;
+
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.d-grid a{
+    color: white;
+}
+
+.input-group{
+    margin-top: 20px;
+}
+
+.input-group-text{
+    background-color: #e3f1fc;
+    border-radius: 50px;
+}
+
+.form-control{
+    background-color: #e3f1fc; 
+    border-radius: 50px;
+}
+
+.no_bullet{/*retira o ponto da lista(ul)*/
+    list-style-type: none;
+}
