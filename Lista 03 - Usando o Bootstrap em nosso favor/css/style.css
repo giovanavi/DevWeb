@@ -32,12 +32,12 @@ body{
 }
 
 .input-group-text{
-    background-color: #e3f1fc;
+    background-color: rgb(240, 243, 244);
     border-radius: 50px;
 }
 
 .form-control{
-    background-color: #e3f1fc; 
+    background-color: rgb(240, 243, 244);
     border-radius: 50px;
 }
 
