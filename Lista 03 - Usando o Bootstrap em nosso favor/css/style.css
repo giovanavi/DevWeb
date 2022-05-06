@@ -1,5 +1,5 @@
 body{
-    padding: 0 0 0 0;
+    weight: 100%;    
 }
 
 .nav{
@@ -14,11 +14,10 @@ body{
 
 .logo img{
     height: 35px;
-
 }
 
 .btn{
-    width: 150px;
+    width: 130px;
     height: 40px;
     border-radius: 50px;
 }
@@ -31,6 +30,8 @@ body{
     margin-top: 20px;
 }
 
+/* background-color: rgb(49, 108, 244); */
+
 .input-group-text{
     background-color: rgb(240, 243, 244);
     border-radius: 50px;
@@ -39,6 +40,21 @@ body{
 .form-control{
     background-color: rgb(240, 243, 244);
     border-radius: 50px;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: large;
+}
+
+.users{
+    margin-bottom: 20px;
+}
+
+.users img{
+    margin-top: 20px;
+    weight: 40px;
+    height: 40px;
 }
 
 .no_bullet{/*retira o ponto da lista(ul)*/
