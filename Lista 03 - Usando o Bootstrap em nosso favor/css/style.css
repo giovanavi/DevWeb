@@ -96,6 +96,11 @@ li > span{
     margin-top: 20px;
 }
 
+.action a:hover{
+    color: black;
+    background-color: rgba(15, 25, 20, 0.1);
+}
+
 .action p{
     font-weight: 450;
 }
@@ -108,10 +113,6 @@ li > span{
     margin-left: 5px;
 }
 
-#tweet{
-
-}
-
 #tzeet{
     font-weight: 480;
 }
@@ -122,10 +123,14 @@ li > span{
     justify-content: space-evenly;
 }
 
+.action2 a:hover{
+    color: rgb(83, 100, 113);
+}
+
 /* background-color: rgb(49, 108, 244); */
 
 .input-group-text{
-    background-color: rgb(240, 243, 244);
+    background-color: rgb(239, 243, 244);
     border-radius: 50px;
 }
 
