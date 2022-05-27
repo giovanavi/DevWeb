@@ -12,8 +12,43 @@ body{
     font-weight: 500;
 }
 
+.d-flex{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.d-flex img{
+    height: 64px;
+    width: 64px;
+}
+
+.area{
+    padding-top: 70px;
+}
+
+.textarea{
+    resize: none;
+}
+
+.reply img{
+    width: 20px;
+    height: 20px;
+} 
+
+.reply a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.reply a:hover{
+    background-color: rgb(29, 155, 240);
+    border-radius: 50px;
+}
+
 .logo img{
     height: 35px;
+    color: rgb(29, 155, 240);
 }
 
 .btn-primary{
@@ -104,6 +139,7 @@ li > span{
 .action p{
     font-weight: 450;
 }
+
 
 .publi span{
     color: rgb(83, 100, 113);
