@@ -3,7 +3,6 @@ body{
 }
 
 .nav{
-    margin-left: -70px;
 }
 
 .nav a{
@@ -14,7 +13,7 @@ body{
 
 .d-flex{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .d-flex img{
@@ -22,17 +21,18 @@ body{
     width: 64px;
 }
 
-.area{
-    padding-top: 70px;
+.text{
+    padding-top: 30px;
 }
 
 .textarea{
     resize: none;
+    border: none;
 }
 
 .reply img{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 } 
 
 .reply a{
@@ -42,16 +42,43 @@ body{
 }
 
 .reply a:hover{
+    color: black;
+    border-radius: 50px;
+    background-color: rgb(29, 155, 240);
+}
+
+.multimidia{
+    justify-content: space-evenly;
+    padding-left: 8px;   
+}
+
+.multimidia img{
+    height: 18px;
+    width: 18px;
+}
+
+.multimidia a{
+    text-decoration: none;
+}
+
+.multimidia a:hover{
     background-color: rgb(29, 155, 240);
     border-radius: 50px;
 }
+
+
+.mult li{
+    display: inline-flex;
+    justify-content:  space-evenly;
+}
+
 
 .logo img{
     height: 35px;
     color: rgb(29, 155, 240);
 }
 
-.btn-primary{
+.btn-modal{
     width: 130px;
     height: 40px;
     border-radius: 50px;
@@ -100,7 +127,6 @@ h4{
     height: 10px;
 }
 
-
 .item{
     color: black;
     font-weight: 500;
@@ -139,7 +165,6 @@ li > span{
 .action p{
     font-weight: 450;
 }
-
 
 .publi span{
     color: rgb(83, 100, 113);
@@ -204,15 +229,32 @@ li > span{
     background-color: rgb(49, 108, 244);
 }
 
+.btn-envio{
+    border: none;
+    background-color: rgb(102, 174, 216);
+    border-radius: 50px;
+}
+
+.btn-envio:hover{
+    background-color: rgb(49, 108, 244);
+}
+
 .btn-follow{
     border-radius: 5px;
 }
 
 .btn-follow:hover{
     background-color: rgb(49, 108, 244);
-
 }
 
 .no_bullet{/*retira o ponto da lista(ul)*/
     list-style-type: none;
+}
+
+.mediumAlert{
+    color: rgb(255, 200, 0);
+}
+
+.maxAlert{
+    color:  rgb(255, 0, 0);
 }
