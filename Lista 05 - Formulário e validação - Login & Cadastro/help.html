@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!--CSS-->
+      <link id="style" rel="stylesheet" href="css/signup.css">
+
+        <!--JavaScript-->
+      <script src="js/validationSignup.js"></script>
+   
+      <title>HELP</title>
+    </head>
+
+  <body>
+
+    <div class="container" role="main">
+      <!-- Modal -->
+      <div class="modal fade in" id="MyModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-start">
+              <h5 class="card-title">Criar conta</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body"> 
+    <div class="container" role="main">
+      <form class="needs-validation" novalidate>
+          <div class="form-floating mb-3" >
+              <input id="name" type="text" class="form-control" placeholder="Name" required>
+              <label for="name">Nome:</label>
+                <div id="validationNameFeedback" class="invalid-feedback">
+                  Por favor digite seu nome 
+                </div>
+          </div>
+          <div class="form-floating mb-3" >
+              <input type="text" class="form-control" id="email" placeholder="Email" required>
+              <label for="email">Email:</label>
+                <div class="invalid-feedback" id="validationEmailFeedback" >
+                  
+                </div>
+          </div>
+          <div class="form-floating mb-3" >
+              <input type="password" class="form-control" id="password"   placeholder="Senha" required minlength="6">
+              <label for="password">Senha:</label>
+                <div id="validationPassFeedback" class="invalid-feedback">
+                  <!-- !!!!!!!!!! A senha é obrigatória e deve ter pelo menos 6 caracteres !!!!!!!!!!!!! -->
+                </div>
+          </div>
+          <div class="form-floating mb-3" >
+              <input type="password" class="form-control" id="passwordConfirm"  placeholder="Confirmação da senha" required minlength="6">
+              <label for="passwordConfirm">Confirmação da senha:</label>
+                <div id="validationPassConfirmFeedback" class="invalid-feedback">
+                  <!-- !!!!!!!!!! A senha é obrigatória e deve ter pelo menos 6 caracteres !!!!!!!!!!!!!-->
+                  <!-- !!!!!!!!!! Senha não correspondente !!!!!!!!!!!!! -->
+                </div>
+          </div>
+
+          <div id="alert-senha" class="alert alert-danger" hidden>
+            Senhas não correspondem!!!
+          </div>
+          
+          <div>
+              <p><strong>Data de nascimento</strong></p> <!--ajustar a altura-->
+              <h6>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se 
+                  esta conta for de empresa, de um animal de estimação ou outros. </h6>                
+          </div>
+
+            <div class="row g-2">
+              <div class="col-md">
+                  <div class="form-floating">
+                      <select class="form-select" id="selectMonth">
+                        <option selected value="null" required> </option>
+                      </select>
+                      <div id="SelectMonthFeedback" class="invalid-feedback">
+                        <!-- !!!!!!!!!! Campo obrigatório !!!!!!!!!!!!! -->
+                      </div>
+                      <label for="selectMonth">Mês</label>
+                  </div>
+              </div>
+              <div class="col-md" aria-required="true">
+                  <div class="form-floating">
+                      <select class="form-select" id="selectDay">
+                        <option selected value="null"> required</option>
+                      </select>
+                      <div id="SelectDayFeedback" class="invalid-feedback">
+                        <!-- !!!!!!!!!! Campo obrigatório. !!!!!!!!!!!!! -->
+                      </div>
+                      <label for="selectDay">Dia</label>
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="form-floating">
+                      <select class="form-select" id="selectYear">
+                        <option selected value="null"> required</option>
+                      </select>
+                      <div id="SelectYearFeedback" class="invalid-feedback">
+                        <!-- !!!!!!!!!! Campo obrigatório. !!!!!!!!!!!!!-->
+                      </div>
+                      <label for="selectYear">Ano</label>
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-check"> <!--ajustar o checkbox a esquerda-->
+              <input class="form-check-input" type="checkbox" id="notifications">
+                <label class="form-check-label" for="notificacoes">
+                  Receba e-mails sobre sua atividade no Twitter e recomendações
+                </label>
+            </div>            
+
+            <div> <!--dar um padding na classe da div (para baixo)-->
+              <p> Você concorda com nossos Termos, com a Política de Privacidade e com o Uso de Cookies?</p>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioYes" checked>
+                <label class="form-check-label" for="RadioSim">Sim</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioNo">
+                <label class="form-check-label" for="RadioNao">Não</label>
+                <!-- PRECISA MARCAR A OPÇÃO "SIM"-->
+                <div class="invalid-feedback"> </div>
+              </div>
+            </div>
+
+            <button id="btn-signup" type="button" class="btn btn-primary btn-signup col-md-12">Inscrever-se</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>       
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+</script>
+
+</body>
+</html>
