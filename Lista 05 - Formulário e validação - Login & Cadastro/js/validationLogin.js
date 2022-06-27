@@ -11,9 +11,6 @@ window.onload = function(){
 
 
     document.addEventListener('keyup', function(){
-        console.log(email.value)
-        console.log(password.value)
-
         if(email.value.length > 0 && password.value.length > 0){
             button.disabled = false
         }else{

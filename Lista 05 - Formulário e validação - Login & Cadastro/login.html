@@ -19,8 +19,8 @@
 
   <body>      
     <!-- Modal -->
-    <div class="modal fade in" id="MyModal" tabindex="-1">
-      <div class="modal-dialog">
+    <div class="modal fade in justify-content-center" id="MyModal" data-bs-backdrop="static" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header justify-content-center">
             <img src="./img/tiziu.png">
@@ -29,26 +29,27 @@
             <h5 class="card-title justify-content-center">Entre no Tzeet agora mesmo</h5>
 
             <form class="row g-3 needs-validation" novalidate>
+              
               <div class="form-floating mb-3" >
-                <input type="text" class="form-control" id="email" placeholder="Name" required>
+                <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
                 <label for="email">Email</label>
-                  <div id="validationEmailFeedback" class="invalid-feedback">
-                    Informe um e-mail váalido!
+                  <div class="invalid-feedback">
+                    Informe um e-mail válido!
                   </div>
               </div>
 
               <div class="form-floating">
                 <input type="password" class="form-control" id="password" placeholder="Senha" required>
                 <label for="password">Senha</label>
-                  <div id="validationPassFeedback" class="invalid-feedback">
-                          
+                  <div class="invalid-feedback">
+                    Informe sua senha
                   </div>
                </div>
 
-              <a href="#" style="margin-left: 8px;">Esqueceu sua senha?</a>
-                  
-              <button id="btn-login" type="button" class="btn btn-primary btn-login col-md-12" disabled> Entrar </button>
-              <p class="card-text">Não tem uma conta? <a href="#" class="card-link">Inscreva-se</a></p>
+              <p> <a href="#" style="margin-left: 5px;">Esqueceu a senha?</a> </p>
+              <button id="btn-login" type="submit" class="btn btn-primary col-md-12" disabled> Entrar </button>
+              
+              <p class="card-text">Não tem uma conta? <a href="signup.html" class="card-link">Inscreva-se</a></p>
                   
             </form>
 
