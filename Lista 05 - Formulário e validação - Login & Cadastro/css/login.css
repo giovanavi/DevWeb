@@ -1,0 +1,11 @@
+body{
+    background-color: darkgrey;
+}
+
+.btn-primary{
+    border-radius: 50px;
+}
+
+.btn-close a{
+    text-decoration: none;
+}
