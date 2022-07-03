@@ -6,17 +6,16 @@ export default{
 </script>
 <template>
     <div id="personal-info">
-        <img src="img/icone_azul.png">
+        <img src="../assets/icone_azul.png">
         <div id="button"> 
             <button type="button" class="btn btn-primary btn-profile"> Editar Perfil </button>
         </div>
 
-        <p>
+        
             <h2> Giovana Vieira </h2>
             <h4> @giovanavieira </h4>
-            <p id="bib"> Sistemas de Informação - Universidade Federal do Ceará 
-        </p>
-
+            <p id="bib"> Sistemas de Informação - Universidade Federal do Ceará </p>
+        
 
         <ul class="no_bullet origem">
             <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">

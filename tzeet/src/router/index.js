@@ -7,7 +7,7 @@ import Signup from '../views/Signup.vue'
 
 const routes = [
     {
-        path: "/home",
+        path: "/",
         name: 'Home',
         component: Home
     },
@@ -32,3 +32,5 @@ export const router = createRouter({
     history: createWebHistory(),
     routes
 })
+
+export default router

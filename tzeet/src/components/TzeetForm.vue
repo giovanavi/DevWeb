@@ -8,7 +8,7 @@ export default {
     <div class="d-flex flex-row col-sm-12 col-md-12 col-lg-12">
         <div class="align-items-center"> 
             <h5>HOME</h5>
-            <img src="img/icone_azul.png">
+            <img src="../assets/icone_azul.png">
         </div>
         <div class="d-flex flex-column flex-fill col-md-12 col-sm-9 col-xs-11 border">
             <div class="text">

@@ -1,9 +1,4 @@
 window.onload = function(){
-
-    // VALIDAR DATAS - FINALIZAR STYLE - VERIFICAR SENHAS IGUAIS
-    
-    // CHECAR ENUNCIADO DA QUESTÃO PARA VER SE ESTÁ TUDO OK
-    //MODAL
     const myModal = new bootstrap.Modal('#MyModal', {
         keyboard: false
     })
@@ -22,9 +17,6 @@ window.onload = function(){
         }
     })
     
-
-//DATA
-
     const yearSelect = document.getElementById("year");
     const monthSelect = document.getElementById("month");
     const daySelect = document.getElementById("day");

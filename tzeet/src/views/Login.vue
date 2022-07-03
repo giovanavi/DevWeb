@@ -1,4 +1,5 @@
 <script>
+
 (function () {
         'use strict'
 
@@ -18,6 +19,31 @@
             }, false)
           })
       })()
+
+window.onload = function(){
+
+    const myModal = new bootstrap.Modal('#MyModal', {
+        keyboard: false
+    })
+    myModal.show()
+
+    const button = document.getElementById("btn-login")
+    const email = document.getElementById("email")
+    const password = document.getElementById("password")
+
+
+    document.addEventListener('keyup', function(){
+        if(email.value.length > 0 && password.value.length > 0){
+            button.disabled = false
+        }else{
+            button.disabled = true
+        }
+    })
+}
+
+export default{
+    name: "Login"
+}
 </script>
 
 <template>
@@ -30,7 +56,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header justify-content-center">
-                <img src="./img/tiziu.png">
+                <img src="../assets/tiziu.png">
             </div>
             <div class="modal-body">
                 <h5 class="card-title justify-content-center">Entre no Tzeet agora mesmo</h5>

@@ -2,7 +2,7 @@
 import Modal from './Modal.vue'
 
 export default{
-    name: Item,
+    name: "Item",
     components:{
         Modal
     }
@@ -17,7 +17,11 @@ export default{
                 <a class="nav-link logo" href="#"> <img src="../assets/tiziu.png"> </a> 
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> <img src="../assets/house-door.svg"> Home </a>
+                <a href="#" class="nav-link" > 
+                    <router-link to="/">
+                        <img src="../assets/house-door.svg"> Home 
+                    </router-link>    
+                </a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#"> <img src="../assets/hash.svg"> Explore </a>
@@ -29,7 +33,11 @@ export default{
                 <a class="nav-link" href="#"> <img src="../assets/envelope.svg">  Messages </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="profile.html"> <img src="../assets/person-fill.svg"> Profile </a>
+                <a href="#" class="nav-link" > 
+                    <router-link to="/profile">        
+                        <img src="../assets/person-fill.svg"> Profile 
+                    </router-link>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"> <img src="../assets/three-dots.svg"> More </a>
@@ -43,7 +51,7 @@ export default{
 
         <modal/>
 
-    </div>
+    </div>  
 </template>
 
 <style scoped>
