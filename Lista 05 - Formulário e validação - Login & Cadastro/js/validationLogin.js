@@ -1,5 +1,4 @@
 window.onload = function(){
-    //TUDO OK
     const myModal = new bootstrap.Modal('#MyModal', {
         keyboard: false
     })
